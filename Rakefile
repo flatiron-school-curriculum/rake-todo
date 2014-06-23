@@ -7,3 +7,7 @@ end
 task :default do
 	puts "Hello, from default task!"
 end
+
+task :environment do
+  require_relative './config/environment'
+end
