@@ -4,13 +4,12 @@ task :hello_rake do
 end
 
 # Define new tasks below
-
 task :default do
   puts "Hello, from default task!"
 end
 
 task :environment do
-  require_relative './config/environment'
+  require_relative 'config/environment'
 end
 
 task :upcoming_todos => [:environment] do
@@ -56,4 +55,3 @@ task :todo_reminder => [:environment] do
   my_ruby_home = ENV["MY_RUBY_HOME"]
   puts "ENV includes #{my_ruby_home}"
 end
-
