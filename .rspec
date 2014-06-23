@@ -1,2 +1,7 @@
 --color
+<<<<<<< HEAD
 --format progress
+=======
+--format progress
+--format documentation
+>>>>>>> a269fdefd97a1ad5cc422d7fb1e1ce055ebc88b6

@@ -3,7 +3,6 @@ task :hello_rake do
   puts "Hello, from rake"
 end
 
-# Define new tasks below
 task :default do 
     puts "Hello, from default task!"
 end
@@ -55,3 +54,4 @@ namespace :user do
         puts "Sending todo reminder to #{ENV["EMAIL"]}"
     end
 end
+
