@@ -17,3 +17,9 @@ task :upcoming_todos => [:environment] do
     puts "Emailing #{user}"
   end
 end
+
+task :overdue_todos => [:environment] do
+	User.with_overdue_todos.each do |user|
+	  puts "Emailing #{user}"
+	end
+end
