@@ -42,4 +42,24 @@ task :console => [:environment] do
   exit
 end
 
+namespace :user do
+  desc "Send a summary to a User"
+  task :send_summary, [:email] => [:environment] do |t, args|
+    # [email] is the argument array
+    # [environment] is the prerequisite task array
+    puts "Sending summary to user with #{args[:email]}"
+  end
+end
+
+task :todo_reminder => [:environment] do
+  # ENV is a constant that represents all of our environmental variables
+  # set through our shell. It stores things like your PATH and such. It is a
+  # Hash like object.
+  my_ruby_home = ENV["MY_RUBY_HOME"]
+  puts "ENV includes #{my_ruby_home}"
+
+  puts "Sending todo reminder to #{ENV["EMAIL"]}"
+end
+
+
 
