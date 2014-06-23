@@ -4,12 +4,13 @@ task :hello_rake do
 end
 
 # Define new tasks below
+
 task :default do
   puts "Hello, from default task!"
 end
 
 task :environment do
-  require_relative 'config/environment'
+  require_relative './config/environment'
 end
 
 task :upcoming_todos => [:environment] do
@@ -46,13 +47,13 @@ namespace :user do
     # [environment] is the prerequisite task array
     puts "Sending summary to user with #{args[:email]}"
   end
-
+  desc "Send a reminder to User"
   task :todo_reminder => [:environment] do
     # ENV is a constant that represents all of our environmental variables
     # set through our shell. It stores things like your PATH and such. It is a
     # Hash like object.
     my_ruby_home = ENV["MY_RUBY_HOME"]
-    puts "ENV includes MY_RUBY_HOME: #{my_ruby_home}"
+    puts "ENV includes #{my_ruby_home}"
 
     puts "Sending todo reminder to #{ENV["EMAIL"]}"
   end
