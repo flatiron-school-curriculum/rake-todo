@@ -4,3 +4,6 @@ task :hello_rake do
 end
 
 # Define new tasks below
+task :default do
+	puts "Hello, from default task!"
+end
