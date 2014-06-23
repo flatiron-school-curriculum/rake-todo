@@ -34,3 +34,8 @@ namespace :todos do
   end
 end
 
+desc "Loads an interactive console."
+task :console => [:environment] do
+  load './bin/console'
+  exit
+end
