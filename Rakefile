@@ -23,3 +23,9 @@ task :overdue_todos => [:environment] do
 	  puts "Emailing #{user}"
 	end
 end
+
+namespace :todos do
+  task :mark_overdue => [:environment] do
+    Todo.mark_overdue
+  end
+end
