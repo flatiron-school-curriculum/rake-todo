@@ -9,11 +9,7 @@ task :default do
 end
 
 task :environment do
-<<<<<<< HEAD
-  require_relative './config/environment'
-=======
   require_relative 'config/environment'
->>>>>>> a269fdefd97a1ad5cc422d7fb1e1ce055ebc88b6
 end
 
 task :upcoming_todos => [:environment] do
@@ -32,12 +28,9 @@ namespace :todos do
   task :mark_overdue => [:environment] do
     Todo.mark_overdue
   end
-<<<<<<< HEAD
 end
 
 namespace :todos do
-=======
->>>>>>> a269fdefd97a1ad5cc422d7fb1e1ce055ebc88b6
   task :mark_upcoming => [:environment] do
     Todo.mark_upcoming
   end
@@ -56,8 +49,6 @@ namespace :user do
     # [environment] is the prerequisite task array
     puts "Sending summary to user with #{args[:email]}"
   end
-<<<<<<< HEAD
-=======
 
   task :todo_reminder => [:environment] do
     # ENV is a constant that represents all of our environmental variables
@@ -68,5 +59,4 @@ namespace :user do
 
     puts "Sending todo reminder to #{ENV["EMAIL"]}"
   end
->>>>>>> a269fdefd97a1ad5cc422d7fb1e1ce055ebc88b6
 end
