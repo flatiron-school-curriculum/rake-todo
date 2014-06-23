@@ -11,3 +11,9 @@ end
 task :environment do
   require_relative './config/environment'
 end
+
+task :upcoming_todos => [:environment] do
+  User.with_upcoming_todos.each do |user|
+    puts "Emailing #{user}"
+  end
+end
