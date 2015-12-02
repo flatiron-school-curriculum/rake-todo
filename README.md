@@ -296,3 +296,5 @@ When invoking the task, you simply pass along a temporary ENV variable assignmen
 * [Wikipedia](http://en.wikipedia.org/) - [Make (software)](http://en.wikipedia.org/wiki/Make_software)
 * [Thor](http://whatisthor.com/) - [Home](http://whatisthor.com/#getting-started)
 * [Avdi Grimm's Vituous Code](http://devblog.avdi.org/) - [Learn advanced Rake in 7 episodes](http://devblog.avdi.org/2014/04/30/learn-advanced-rake-in-7-episodes/?utm_source=rubyweekly&utm_medium=email)
+
+<a href='https://learn.co/lessons/rake-todo' data-visibility='hidden'>View this lesson on Learn.co</a>
