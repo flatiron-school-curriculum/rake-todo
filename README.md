@@ -297,4 +297,4 @@ When invoking the task, you simply pass along a temporary ENV variable assignmen
 * [Thor](http://whatisthor.com/) - [Home](http://whatisthor.com/#getting-started)
 * [Avdi Grimm's Vituous Code](http://devblog.avdi.org/) - [Learn advanced Rake in 7 episodes](http://devblog.avdi.org/2014/04/30/learn-advanced-rake-in-7-episodes/?utm_source=rubyweekly&utm_medium=email)
 
-<a href='https://learn.co/lessons/rake-todo' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rake-todo' title='Rake TODO'>Rake TODO</a> on Learn.co and start learning to code for free.</p>
